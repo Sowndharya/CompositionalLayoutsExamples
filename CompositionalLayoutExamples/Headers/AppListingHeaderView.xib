@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14810.11" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.13"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="iOS 13.0 system colors" minToolsVersion="11.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AppListingHeaderView" id="U6b-Vx-4bR" customClass="AppListingHeaderView" customModule="CompositionalLayoutExamples" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="403" height="43"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NsC-pA-tcu">
+                    <rect key="frame" x="0.0" y="0.0" width="403" height="0.5"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="opaqueSeparatorColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="ZOx-83-kxb"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="0JV-fI-VPR"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Apps We Love" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SF7-al-ubk">
+                    <rect key="frame" x="0.0" y="10.5" width="175.5" height="22.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQk-K1-HJL">
+                    <rect key="frame" x="356" y="7" width="47" height="30"/>
+                    <state key="normal" title="See All"/>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="NsC-pA-tcu" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="8WR-yX-UkZ"/>
+                <constraint firstAttribute="trailing" secondItem="NsC-pA-tcu" secondAttribute="trailing" id="D5k-Kq-juH"/>
+                <constraint firstItem="SF7-al-ubk" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="Dyq-JX-57Y"/>
+                <constraint firstItem="SF7-al-ubk" firstAttribute="top" secondItem="NsC-pA-tcu" secondAttribute="bottom" constant="10" id="J8S-D4-RcM"/>
+                <constraint firstAttribute="bottom" secondItem="SF7-al-ubk" secondAttribute="bottom" constant="10" id="LJZ-Es-qBK"/>
+                <constraint firstItem="kQk-K1-HJL" firstAttribute="centerY" secondItem="SF7-al-ubk" secondAttribute="centerY" id="qFC-zD-WfR"/>
+                <constraint firstAttribute="trailing" secondItem="kQk-K1-HJL" secondAttribute="trailing" id="whg-13-TPj"/>
+                <constraint firstItem="NsC-pA-tcu" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="wiD-1L-wov"/>
+            </constraints>
+            <connections>
+                <outlet property="heading" destination="SF7-al-ubk" id="Qc5-QC-QQw"/>
+            </connections>
+            <point key="canvasLocation" x="52.898550724637687" y="-17.075892857142858"/>
+        </collectionReusableView>
+    </objects>
+</document>

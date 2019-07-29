@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14810.11" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.13"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="iOS 13.0 system colors" minToolsVersion="11.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BannerCell" customModule="CompositionalLayoutExamples" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="474" height="559"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="474" height="559"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qqJ-v7-al4">
+                        <rect key="frame" x="0.0" y="0.0" width="474" height="0.5"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="opaqueSeparatorColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="5hO-Do-cD8"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WHAT TO WATCH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W6F-eL-ZAt">
+                        <rect key="frame" x="0.0" y="10" width="103" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="linkColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ALT Balaji - Original Webseries" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUj-bI-qEW">
+                        <rect key="frame" x="0.0" y="29.5" width="273.5" height="24"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Watch Indian Originals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2X-Zz-JxJ">
+                        <rect key="frame" x="0.0" y="58.5" width="195" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" cocoaTouchSystemColor="systemGrayColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Image1" translatesAutoresizingMaskIntoConstraints="NO" id="uql-Mt-tB4">
+                        <rect key="frame" x="0.0" y="92.5" width="474" height="441.5"/>
+                        <color key="backgroundColor" red="0.67843137254901964" green="0.59215686274509804" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.corenerRadius">
+                                <integer key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="qqJ-v7-al4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="0Lc-A6-KXc"/>
+                <constraint firstItem="uql-Mt-tB4" firstAttribute="top" secondItem="V2X-Zz-JxJ" secondAttribute="bottom" constant="10" id="1NB-UO-8yz"/>
+                <constraint firstItem="JUj-bI-qEW" firstAttribute="top" secondItem="W6F-eL-ZAt" secondAttribute="bottom" constant="5" id="5xL-yQ-g7O"/>
+                <constraint firstItem="JUj-bI-qEW" firstAttribute="leading" secondItem="W6F-eL-ZAt" secondAttribute="leading" id="8Ek-a8-mF0"/>
+                <constraint firstItem="W6F-eL-ZAt" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="GTI-lq-DCk"/>
+                <constraint firstItem="W6F-eL-ZAt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="JKh-v3-ZSq"/>
+                <constraint firstAttribute="trailing" secondItem="qqJ-v7-al4" secondAttribute="trailing" id="QpL-hw-XmQ"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="W6F-eL-ZAt" secondAttribute="trailing" constant="10" id="VBy-Cc-8lq"/>
+                <constraint firstItem="V2X-Zz-JxJ" firstAttribute="leading" secondItem="JUj-bI-qEW" secondAttribute="leading" id="azd-IG-K55"/>
+                <constraint firstAttribute="trailing" secondItem="uql-Mt-tB4" secondAttribute="trailing" id="cl5-Wb-AKp"/>
+                <constraint firstItem="V2X-Zz-JxJ" firstAttribute="top" secondItem="JUj-bI-qEW" secondAttribute="bottom" constant="5" id="eZ8-X3-Eev"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="JUj-bI-qEW" secondAttribute="trailing" constant="10" id="ov6-e2-xxl"/>
+                <constraint firstItem="uql-Mt-tB4" firstAttribute="leading" secondItem="V2X-Zz-JxJ" secondAttribute="leading" id="rXo-bs-nXv"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="V2X-Zz-JxJ" secondAttribute="trailing" constant="10" id="rbM-nI-9Gy"/>
+                <constraint firstItem="qqJ-v7-al4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="sXK-UA-0o1"/>
+                <constraint firstAttribute="bottom" secondItem="uql-Mt-tB4" secondAttribute="bottom" constant="25" id="uwh-cp-VNJ"/>
+            </constraints>
+            <size key="customSize" width="584" height="572"/>
+            <connections>
+                <outlet property="appDesc" destination="V2X-Zz-JxJ" id="wjl-zM-lzU"/>
+                <outlet property="appName" destination="JUj-bI-qEW" id="e04-9U-wXZ"/>
+                <outlet property="bannerImage" destination="uql-Mt-tB4" id="U80-sy-woD"/>
+                <outlet property="bannerName" destination="W6F-eL-ZAt" id="TzY-ar-wpH"/>
+            </connections>
+            <point key="canvasLocation" x="142.02898550724638" y="177.79017857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Image1" width="467" height="700.5"/>
+    </resources>
+</document>

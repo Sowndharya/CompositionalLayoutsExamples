@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14810.11" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.13"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="iOS 13.0 system colors" minToolsVersion="11.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AppListingCell" customModule="CompositionalLayoutExamples" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="388" height="141"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="388" height="141"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vS8-R2-wZO">
+                        <rect key="frame" x="0.0" y="10" width="121" height="121"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="vS8-R2-wZO" secondAttribute="height" id="N2g-uT-D6k"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="xxC-cf-CXf">
+                        <rect key="frame" x="135" y="44.5" width="140.5" height="52.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leo Augmented Reality Camerra" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gu-n6-w8T">
+                                <rect key="frame" x="0.0" y="0.0" width="140.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#1 Augmented Reality Camera" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wej-8b-7OG">
+                                <rect key="frame" x="0.0" y="38" width="140.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="systemGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZo-Rw-kN0">
+                        <rect key="frame" x="325.5" y="60" width="62.5" height="21"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="secondarySystemBackgroundColor"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                        <inset key="contentEdgeInsets" minX="12" minY="3" maxX="12" maxY="3"/>
+                        <state key="normal" title="OPEN">
+                            <color key="titleColor" red="0.0" green="0.33215733408748116" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In-App Purchases" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xY4-NX-gSb">
+                        <rect key="frame" x="325.5" y="83" width="62.5" height="8.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                        <color key="textColor" cocoaTouchSystemColor="systemGrayColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="xY4-NX-gSb" firstAttribute="trailing" secondItem="dZo-Rw-kN0" secondAttribute="trailing" id="0kM-UR-ORw"/>
+                <constraint firstItem="vS8-R2-wZO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="34Z-yU-syX"/>
+                <constraint firstItem="xxC-cf-CXf" firstAttribute="leading" secondItem="vS8-R2-wZO" secondAttribute="trailing" constant="14" id="6K5-zh-1xZ"/>
+                <constraint firstItem="dZo-Rw-kN0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xxC-cf-CXf" secondAttribute="trailing" constant="50" id="AVs-fk-9PW"/>
+                <constraint firstItem="dZo-Rw-kN0" firstAttribute="centerY" secondItem="xxC-cf-CXf" secondAttribute="centerY" id="Fu8-ZU-Gev"/>
+                <constraint firstItem="xY4-NX-gSb" firstAttribute="top" secondItem="dZo-Rw-kN0" secondAttribute="bottom" constant="2" id="HKf-ne-lKF"/>
+                <constraint firstItem="xY4-NX-gSb" firstAttribute="leading" secondItem="dZo-Rw-kN0" secondAttribute="leading" id="OfO-fx-ymb"/>
+                <constraint firstAttribute="trailing" secondItem="dZo-Rw-kN0" secondAttribute="trailing" id="TLR-gM-13F"/>
+                <constraint firstAttribute="bottom" secondItem="vS8-R2-wZO" secondAttribute="bottom" constant="10" id="dqJ-CO-vbI"/>
+                <constraint firstItem="vS8-R2-wZO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="loO-AC-Su9"/>
+                <constraint firstItem="xxC-cf-CXf" firstAttribute="centerY" secondItem="vS8-R2-wZO" secondAttribute="centerY" id="rjg-ed-tWm"/>
+            </constraints>
+            <size key="customSize" width="388" height="141"/>
+            <connections>
+                <outlet property="actionButton" destination="dZo-Rw-kN0" id="kTq-u7-Bxt"/>
+                <outlet property="appDesc" destination="wej-8b-7OG" id="I7C-nb-SQw"/>
+                <outlet property="appIcon" destination="vS8-R2-wZO" id="kat-lG-PwJ"/>
+                <outlet property="appName" destination="8gu-n6-w8T" id="dIb-yF-qL6"/>
+                <outlet property="inAppPurchases" destination="xY4-NX-gSb" id="uhK-0f-jKp"/>
+            </connections>
+            <point key="canvasLocation" x="144.92753623188406" y="58.59375"/>
+        </collectionViewCell>
+    </objects>
+</document>
